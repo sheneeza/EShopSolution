@@ -5,9 +5,7 @@
       context: .
       dockerfile: OrderAPI/Dockerfile
     ports:
-      - "8001:80"
-    environment:
-      - ASPNETCORE_URLS=http://+:80
+      - 31045:8080
 
   productapi:
     image: productapi
@@ -15,9 +13,7 @@
       context: .
       dockerfile: ProductAPI/Dockerfile
     ports:
-      - "8002:80"
-    environment:
-      - ASPNETCORE_URLS=http://+:80
+      - 8002:8080
 
   promotionsapi:
     image: promotionsapi
@@ -25,9 +21,7 @@
       context: .
       dockerfile: PromotionsAPI/Dockerfile
     ports:
-      - "8003:80"
-    environment:
-      - ASPNETCORE_URLS=http://+:80
+      - 8003:8080
 
   reviewsapi:
     image: reviewsapi
@@ -35,9 +29,7 @@
       context: .
       dockerfile: ReviewsAPI/Dockerfile
     ports:
-      - "8004:80"
-    environment:
-      - ASPNETCORE_URLS=http://+:80
+      - 8004:8080
 
   shippingapi:
     image: shippingapi
@@ -45,6 +37,6 @@
       context: .
       dockerfile: ShippingAPI/Dockerfile
     ports:
-      - "8005:80"
-    environment:
-      - ASPNETCORE_URLS=http://+:80
+      - 8005:8080
+        
+
